@@ -15,7 +15,7 @@ namespace NetSpeedDataCollector
     {            
         private NetworkInterface[] nicArr;
         private const double TimerUpdate = 1000;
-        private const double DataUpdate = 60000;
+        private const double DataUpdate = 600000;
         private Timer NetSpeedTimer;
         private double bytesRecieved = 0;
         private int maxSpeed = 0;
@@ -85,7 +85,6 @@ namespace NetSpeedDataCollector
 
             if (bytesReceivedSpeed < 1000)
             {
-
 
                 avgSpeed += bytesReceivedSpeed;
                 avgSpeed /= 2;

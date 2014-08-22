@@ -134,7 +134,7 @@ namespace NetSpeedDataCollector
             "`Average`," +
             "`Speed`)"
             +"VALUES" 
-            +"("+"'"+time+"','"+speed+"','"+average+"');";
+            +"("+"'"+time+"','"+average+"','"+speed+"');";
 
 
 
@@ -178,7 +178,7 @@ namespace NetSpeedDataCollector
 
             string query = "CREATE TABLE IF NOT EXISTS `speed_data` (" +
                          " `Date` varchar(15) NOT NULL,   " +
-                         " `Speed` varchar(15) NOT NULL,   " +
+                         " `Max Speed` varchar(15) NOT NULL,   " +
                          " `Average` varchar(15) NOT NULL   );";
 
 

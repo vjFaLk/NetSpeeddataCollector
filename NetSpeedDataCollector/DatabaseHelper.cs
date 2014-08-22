@@ -131,10 +131,10 @@ namespace NetSpeedDataCollector
             string time = DateTime.Now.ToString("d:h:mm ");        
             string query = "INSERT INTO `netdata`.`speed_data`" +
             "(`Date`," +  
-            "`Average`," +
-            "`Speed`)"
+            "`MaxSpeed`," +
+            "`Average`)"
             +"VALUES" 
-            +"("+"'"+time+"','"+average+"','"+speed+"');";
+            +"("+"'"+time+"',"+speed+","+average+");";
 
 
 
@@ -178,8 +178,8 @@ namespace NetSpeedDataCollector
 
             string query = "CREATE TABLE IF NOT EXISTS `speed_data` (" +
                          " `Date` varchar(15) NOT NULL,   " +
-                         " `Max Speed` varchar(15) NOT NULL,   " +
-                         " `Average` varchar(15) NOT NULL   );";
+                         " `Average` INT NOT NULL,   " +
+                         " `MaxSpeed` INT NOT NULL   );";
 
 
             if (this.OpenConnection() == true)

@@ -49,6 +49,7 @@ namespace NetSpeedDataCollector
         {
             DatabaseHelper data = new DatabaseHelper();
             data.Insert(maxSpeed, avgSpeed);
+            maxSpeed = 0;
             
         }
 

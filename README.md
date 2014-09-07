@@ -1,4 +1,4 @@
-NetSpeeddataCollector
+Dynamic Synchronous Internet Speed Data Collector Ultimate 3000™ ©
 =====================
 
 A quick and dirty C# application I wrote up to store the Average and Maximum download speed every five minutes into a MySQL Database that can be later extracted and analysed.
